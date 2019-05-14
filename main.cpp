@@ -1,8 +1,30 @@
 #include <iostream>
+#include <vector>
+#include <tuple>
+#include <algorithm>
+#include <string>
+#include <iomanip>      // std::setw
+#include <exception>
 #include "buffer.h"
 
 
-int main(/*int argc, char const *argv[]*/) {
-    std::cout << "Hello World\n";
+int main() {
+    Buffer buffer;
+    std::string type;
+
+    while(42) {
+        std::cin >> type;
+
+        if (type == "exit")
+            break;
+        else if (type == "print")
+            buffer.printAndDelBuffer();
+        else if (type == "get")
+            buffer.getFirst();
+        else  {
+            buffer.insert(type);
+        }
+    }
+
     return 0;
 }

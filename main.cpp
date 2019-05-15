@@ -1,10 +1,4 @@
 #include <iostream>
-#include <vector>
-#include <tuple>
-#include <algorithm>
-#include <string>
-#include <iomanip>      // std::setw
-#include <exception>
 #include "buffer.h"
 
 

@@ -4,15 +4,16 @@
 #include <iostream>
 #include <vector>
 #include <tuple>
-#include <algorithm>
+#include <algorithm> // find_if
 #include <string>
-#include <iomanip>      // std::setw
-#include <exception>
+#include <iomanip> // std::setw
+#include <exception> // handle exceptions
 
 
 class Buffer {
 public:
     Buffer() {};
+
     void insert(std::string expression);
     void printAndDelBuffer();
     void getFirst();

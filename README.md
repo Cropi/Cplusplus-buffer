@@ -3,7 +3,7 @@ A simple c++ buffer (command-line) program for demonstration purpose
 
 # Compilation
 * Make sure you have g++14 available on your computer
-* make
+* ```make```
 
 # Run
-./main
+```./main```
